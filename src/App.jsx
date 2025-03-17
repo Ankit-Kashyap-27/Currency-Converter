@@ -5,7 +5,7 @@ import useCurrencyinfo from './hooks/useCurrencyinfo';
 
 
 function App() {
-  const [amount, setamount] = useState(0);
+  const [amount, setamount] = useState();
   const [From, setFrom] = useState("usd");
   const [To, setTo] = useState('inr');
   const [convertedamount, setconvertedamount] = useState(0);
@@ -71,17 +71,3 @@ function App() {
 }
 
 export default App
-{/* <div className={`flex h-screen items-center justify-center ${className}`}>
-<div className="h-[60vh] w-[50vw] flex flex-col justify-evenly border-2 border-white"
-  style={{
-    backgroundColor: "rgba(108, 122, 137, 0.7)", // translucent background
-    backdropFilter: "blur(5px)", // blur effect for better aesthetics
-    borderRadius: "10px", // optional: rounded corners
-  }}
->
-  
-</div>
-</div> */}
-{/* <div className=' absolute'>
-        <button className='relative left-[21vw] bottom-[8vh] rounded-2xl  bg-blue-400 h-[10vh] w-[8vw] text-xl font-semibold text-white border-2'>SWAP</button>
-      </div> */}
